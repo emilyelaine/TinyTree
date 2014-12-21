@@ -82,6 +82,13 @@ body {
     ALL: Orange Theme
    =================== */
 
+   .main aside {
+        -webkit-box-shadow: 0 5px 10px #aaa;
+           -moz-box-shadow: 0 5px 10px #aaa;
+                box-shadow: 0 5px 10px #aaa;
+    }
+	
+
 .header-container {
     border-bottom: 10px solid #02AE7B;
 	height: 100px;
@@ -113,7 +120,9 @@ body {
  h1, h2, h3	{
 	font-family:  'Josefin Sans', sans-serif;	
 		}
-   
+ section#resources h3	{
+	border-bottom: 2px dotted #F87563; 
+ }
 div.title {
 	position: absolute;
 	top: 5%;
@@ -264,6 +273,7 @@ div.shop p	{
 	margin-top: -15px;	
 }
 
+
 aside h4	{
 	color: #000;
 	font-size: 120%;
@@ -285,6 +295,10 @@ aside ul	{
 	margin: 0;
 	line-height: 1.6em;
 	padding-left: 0;
+}
+
+aside img	{
+	margin-left: 5%;	
 }
 
 article h2	{
@@ -362,6 +376,13 @@ footer div.social img	{
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
+	 .main aside {
+       -webkit-box-shadow: 0 5px 10px #aaa;
+       -moz-box-shadow: 0 5px 10px #aaa;
+        box-shadow: 0 5px 10px #aaa;
+    }
+
+	
 	div.title {
 		position: absolute;
 		top: 5%;
@@ -466,8 +487,8 @@ footer div.social img	{
 }
 
 aside img	{
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 27%;
+	text-align: center;
 }
 	
 section.shop{
@@ -737,8 +758,7 @@ div.shop p	{
 	
 	.main aside img	{
 		text-align: center;	
-		margin-left: 3%;
-		margin-right: 3%;
+		margin-left: 0;
 	}
 	
 	
@@ -791,9 +811,9 @@ section.shop div.shop	{
 	position: relative;
 	overflow: hidden;
 	width: 275px;
-	-webkit-boxshadow: 1px 1px 1px 1px #823F3A;
-	-moz-box-shadow: 1px 1px 1px 1px #823F3A;
-	box-shadow: 1px 1px 1px 1px #823F3A;
+	-webkit-boxshadow: 1px 1px 1px 1px #cccecd;
+	-moz-box-shadow: 1px 1px 1px 1px #cccecd;
+	box-shadow: 1px 1px 1px 1px #cccecd;
 }
 
 section.shop div.shop img	{
