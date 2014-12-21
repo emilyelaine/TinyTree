@@ -107,7 +107,6 @@ body {
 .footer-container,
 .main aside {
     background: #fff;
-
 }
 
 .title {
@@ -175,7 +174,6 @@ div#blogmain	{
 }
 
 .main aside {
-    color: white;
     padding: 0px 5% 10px;
 }
 
@@ -305,7 +303,7 @@ article h2	{
 	border-bottom: 2px dotted #02AE7B;
 	border-top: 2px dotted #02AE7B;	
 	padding-top: 5px;
-	padding-botton: 5px;
+	padding-bottom: 5px;
 }
 
 .footer-container footer {
