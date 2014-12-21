@@ -1,4 +1,5 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600,700);
 
 html,
 button,
@@ -14,12 +15,12 @@ html {
 }
 
 ::-moz-selection {
-    background: #b3d4fc;
+    background: #fff;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: #fff;
     text-shadow: none;
 }
 
@@ -27,7 +28,7 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #CCCCCC;
     margin: 1em 0;
     padding: 0;
 }
@@ -52,8 +53,14 @@ textarea {
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
-    color: #000;
+    color: #000000;
     padding: 0.2em 0;
+}
+
+h1.title{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: 400;
+	padding-left: 5px;	
 }
 
 
@@ -62,7 +69,8 @@ textarea {
    ========================================================================== */
 
 body {
-    font: 16px/26px Helvetica, Helvetica Neue, Arial;
+    font: "Helvetica Neue", Helvetical, Arial, sans-serif;
+	font-weight: 300;
 }
 
 .wrapper {
@@ -75,27 +83,45 @@ body {
    =================== */
 
 .header-container {
-    border-bottom: 20px solid #e44d26;
+    border-bottom: 10px solid #02AE7B;
+	height: 100px;
+
 }
 
-.footer-container,
+.footer-container	{
+	border-top: 10px solid #02AE7B;	
+}
 .main aside {
-    border-top: 20px solid #e44d26;
+    border-top: 10px solid #FFF941;
 }
 
 .header-container,
 .footer-container,
 .main aside {
-    background: #f16529;
+    background: #fff;
+
 }
 
 .title {
-    color: white;
+    color: #04AE7B;
 }
 
 /* ==============
     MOBILE: Menu
    ============== */
+   h1, h2, h3	{
+			font-family:  'Josefin Sans', sans-serif;	
+		}
+   
+   div.title {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+	}
+	
+	header img, h1.title{
+		float: left;
+	}
 
 nav ul {
     margin: 0;
@@ -104,27 +130,20 @@ nav ul {
 
 nav a {
     display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
+    padding: 5px;
+	text-align: center;
     text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #e44d26;
-}
-
-nav a:hover,
-nav a:visited {
-    color: white;
-}
-
-nav a:hover {
-    text-decoration: underline;
+    font-weight: lighter;
+    color: #5E5E5E;
+    background: #fff;
 }
 
 
+nav a:hover	{
+    color: #FFF;
+	background: #02AE7B;
+	text-decoration: none;
+}
 
 /* ==============
     MOBILE: Main
@@ -132,6 +151,7 @@ nav a:hover {
 
 .main {
     padding: 30px 0;
+	margin-top: 50px;
 }
 
 .main article h1 {
@@ -143,13 +163,26 @@ nav a:hover {
     padding: 0px 5% 10px;
 }
 
+nav.primary{
+	margin-top: 110px;	
+}
+
+a	{
+	color: black;
+	text-decoration: none;	
+}
+
+a:hover	{
+	color: #02AE7B;	
+}
+
 .footer-container footer {
     color: white;
     padding: 20px 0;
 }
 
 footer	{
-		background-color: #f16529;
+		background-color: #fff;
 		height: 90px;
 	}
 	
@@ -193,22 +226,108 @@ footer	{
 /* ====================
     INTERMEDIATE: Menu
    ==================== */
-
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
+	   div.title {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+	}
+	
+	h1, h2, h3	{
+			font-family:  'Josefin Sans', sans-serif;	
+		}
+		
+	header img, h1.title{
+		float: left;
+	}
+	
+	nav {
+        float: right;
+        width: 45%;
     }
+	
+	nav.primary	{
+	z-index: 10;
+	position: absolute;
+	top: 50px;
+	right: 0;
+}
 
-    nav li:first-child a {
-        margin-left: 0;
-    }
+	nav.primary	{
+	margin-top: 15px;
+}
 
-    nav li:last-child a {
-        margin-right: 0;
-    }
+	nav.primary ul	{
+	list-style: none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+	nav.primary ul li a  {
+	display: block;
+	color: black;
+	text-decoration: none;
+	font-weight: 100;
+	font-size: 110%;
+	width: 75px;
+	text-align: center;
+}
+
+	nav.primary ul li  {
+	text-align: center;
+	color: #000000;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding: 0;
+	width: 75px;
+}
+
+	nav.primary ul li.current-menu-item  {
+	color: #000000;
+}
+
+	nav.primary ul li:hover {
+	background-color: #02AE7B;
+	color: #fff;
+}
+
+	nav.primary ul ul
+{
+	display: none;
+	position: absolute;
+	bottom: 100%;
+	right: 0;
+	padding: 0;
+	color: #000;
+}
+
+	nav.primary ul ul li {
+	float: none;
+	width: 30%;
+	font-size: 100%;
+}
+
+	nav.primary ul ul a {
+	padding: 5px;
+	width: 30%;
+	color: #fff;
+}
+
+	nav.primary ul li:hover > ul {
+	display: block;
+}
+
+	nav.primary ul li a:hover, nav.primary ul li li a:hover	{
+	color: #fff;		
+}
+
+	aside img	{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 
 /* ========================
     INTERMEDIATE: IE Fixes
@@ -217,6 +336,11 @@ footer	{
     nav ul li {
         display: inline;
     }
+	
+	nav ul li ul	{
+		float: none;
+		display: block;
+	}	
 
     .oldie nav a {
         margin: 0 0.7%;
@@ -239,30 +363,132 @@ footer	{
 /* ============
     WIDE: Menu
    ============ */
-
-    .title {
-        float: left;
-    }
+		
+	h1, h2, h3	{
+		font-family:  'Josefin Sans', sans-serif;	
+	}
+    div.title {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+	}
+	
+	header img, h1.title{
+		float: left;
+	}
 
     nav {
         float: right;
-        width: 38%;
+        width: 60%;
     }
+	
+	nav.primary	{
+	z-index: 10;
+	position: absolute;
+	top: 50px;
+	right: 0;
+	background-color: #FFFFFF;
+	margin-top:15px;
+}
+
+	nav.primary ul	{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+	nav.primary ul a  {
+	display: block;
+	color: black;
+	text-decoration: none;
+	font-weight: 100;
+	font-size: 110%;
+	text-align: center;
+}
+
+	nav.primary ul li  {
+	color: #000000;
+	position: relative;
+	float: left;
+	margin: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 75px;
+	display: block;
+	text-align: center;
+}
+
+	nav.primary ul li.current-menu-item  {
+	color: #000000;
+}
+
+	nav.primary ul li:hover {
+	background-color: #02AE7B;
+	color: #fff;
+}
+
+	nav.primary ul ul
+{
+	display: none;
+	position: absolute;
+	bottom: 100%;
+	right: 0;
+	padding: 0;
+	color: #000;
+}
+
+	nav.primary ul ul li {
+	float:none;
+	width: 75px;
+}
+
+	nav.primary ul ul a {
+	padding: 5px;
+	color: black;
+	width: 75px;
+}
+
+	nav.primary ul li:hover > ul {
+	display: block;
+}
+
+	nav.primary ul li a:hover, nav.primary ul li li a:hover	{
+	color: #fff;	
+	width: 75px;
+	background-color: #02AE7B;
+}
+
 	
 /* ============
     WIDE: Main
    ============ */
 
-    .main article {
+	.main-container h1, .main-container h2	{
+		font-family: 'Josefin Sans', sans-serif;
+	}
+    section.main {
         float: left;
         width: 57%;
+		margin-top: 0;
     }
+	section.shop img	{
+		float: left;
+		width: 275px;	
+	}
 
     .main aside {
         float: right;
         width: 28%;
+		margin-top: 75px;
     }
 	
+	.main aside img	{
+		text-align: center;	
+		margin-left: 3%;
+		margin-right: 3%;
+	}
 	footer	nav	{
 		float: left;	
 		position: relative;
@@ -270,7 +496,7 @@ footer	{
 	}
 	
 	footer	{
-		background-color: #f16529;
+		background-color: #fff;
 		height: 60px;
 	}
 }
@@ -280,7 +506,15 @@ footer	{
 /* ===============
     Maximal Width
    =============== */
-
+	   div.title {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+	}
+	
+	header img, h1.title{
+		float: left;
+	}
     .wrapper {
         width: 1026px; /* 1140px - 10% for margins */
         margin: 0 auto;
