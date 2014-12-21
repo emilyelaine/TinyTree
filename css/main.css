@@ -308,15 +308,24 @@ footer p	{
 	clear: both;
 	position: relative;
 	bottom: 5px;
-	left: 10px;
 	color: #333;	
 	font-size: small;
+	text-align: center;
 }
 	
  footer	nav	{
 		position: relative;
 		top: -20px;
 	}
+
+footer div.social{
+	text-align: center;
+	margin-top: -10px;
+}
+
+footer div.social img	{
+	padding: 5px;	
+}
  
 /* ===============
     ALL: IE Fixes
@@ -542,6 +551,31 @@ div.shop p	{
 	margin-top: -15px;	
 }
 
+	footer p	{
+		text-align: left;
+		left: 10px;
+		bottom: 0;
+	
+	}
+
+	footer div.social{
+		float: right;
+		margin-right: 20px;
+		margin-top: -15px;	
+	}
+	
+	footer	nav	{
+		float: left;	
+		position: relative;
+		top: -20px;
+	}
+	
+	footer nav ul li	{
+		display: block;
+		float: left;
+		padding: 0px 10px;
+	}
+
 
 
 /* ========================
@@ -584,8 +618,8 @@ div.shop p	{
 	}
     div.title {
 		position: absolute;
-		top: 30px;
-		left: 30px;
+		top: 5%;
+		left: 5%;
 	}
 	
 	header img, h1.title{
@@ -718,6 +752,12 @@ div.shop p	{
 		display: block;
 		float: left;
 		padding: 0px 10px;
+	}
+	
+	footer div.social{
+		float: right;
+		margin-right: 20px;
+		margin-top: -15px;	
 	}
 	
 	footer	{
